@@ -12,9 +12,9 @@
    <children>
       <AnchorPane prefHeight="341.0" prefWidth="604.0">
          <children>
-            <TextField fx:id="ID" layoutX="222.0" layoutY="142.0" promptText="ID" />
+            <TextField fx:id="ID" layoutX="222.0" layoutY="142.0" promptText="ID" />  
+            <PasswordField fx:id="password" layoutX="222.0" layoutY="166.0" onKeyPressed="#keyPressHandler" promptText="password" />
             <Button fx:id="btnLogin" layoutX="271.0" layoutY="213.0" mnemonicParsing="false" onAction="#Login" prefHeight="22.0" prefWidth="63.0" text="login" />
-            <PasswordField fx:id="password" layoutX="222.0" layoutY="166.0" promptText="password" />
             <CheckBox layoutX="530.0" layoutY="304.0" mnemonicParsing="false" text="admin" />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="203.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                <image>

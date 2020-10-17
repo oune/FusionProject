@@ -7,19 +7,19 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="288.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="288.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
       <BorderPane prefHeight="288.0" prefWidth="554.0">
          <left>
             <Accordion prefHeight="252.0" prefWidth="140.0" BorderPane.alignment="CENTER">
               <panes>
-                <TitledPane animated="false" prefHeight="197.0" prefWidth="165.0" text="movie">
+                <TitledPane animated="false" prefHeight="197.0" prefWidth="165.0" text="영화">
                      <content>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <Label text="Label" />
-                              <Label text="Label" />
-                              <Label text="Label" />
+                              <Label onMouseClicked="#labelClickHandler" text="현재 상영작" />
+                              <Label onMouseClicked="#labelClickHandler" text="상영 예정작" />
+                              <Label onMouseClicked="#labelClickHandler" text="Label" />
                            </children>
                         </VBox>
                      </content>
